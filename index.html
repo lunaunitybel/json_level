@@ -9,24 +9,37 @@
 <body>
 
     <div class="container">
-        <label for="moves">Moves:</label>
-        <input type="text" id="moves" />
+        <div class="input-box">
+            <label for="moves">Moves:</label>
+            <input type="text" id="moves" />
+        </div>
 
-        <label for="objectives">Objectives:</label>
-        <input type="text" id="objectives" />
+        <div class="input-box">
+            <label for="objectives">Objectives:</label>
+            <input type="text" id="objectives" />
+        </div>
 
-        <label for="void">Void:</label>
-        <input type="text" id="void" />
+        <div class="input-box">
+            <label for="void">Void:</label>
+            <input type="text" id="void" />
+        </div>
 
-        <label for="layer1">Layer1:</label>
-        <input type="text" id="layer1" />
+        <div class="input-box">
+            <label for="layer1">Layer1:</label>
+            <input type="text" id="layer1" />
+        </div>
 
-        <label for="pieces">Pieces:</label>
-        <input type="text" id="pieces" />
+        <div class="input-box">
+            <label for="pieces">Pieces:</label>
+            <input type="text" id="pieces" />
+        </div>
 
         <button onclick="generateJSON()">Generate JSON</button>
 
-        <textarea id="jsonOutput" readonly></textarea>
+        <div class="output-box">
+            <label for="jsonOutput">JSON Output:</label>
+            <textarea id="jsonOutput" readonly></textarea>
+        </div>
     </div>
 
     <script src="script.js"></script>
