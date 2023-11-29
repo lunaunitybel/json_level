@@ -4,54 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Data Input App</title>
+    <title>Level Data to JSON creator</title>
 </head>
 <body>
 
     <div class="container">
         <div class="input-box">
             <label for="author">Author:</label>
-            <input type="text" id="author" />
+            <input type="text" id="author" value="Piwi / Bat / Bel"/>
         </div>
 
         <div class="input-box">
             <label for="level_id">Level_id:</label>
-            <input type="text" id="level_id" />
+            <input type="text" id="level_id" value="1"/>
         </div>
 
         <div class="input-box">
             <label for="level_version">Level_version:</label>
-            <input type="text" id="level_version" />
+            <input type="text" id="level_version" value="1"/>
         </div>
         
         <div class="input-box">
             <label for="ordinal">Ordinal:</label>
-            <input type="text" id="ordinal" />
+            <input type="text" id="ordinal" value="1"/>
         </div>
 
         <div class="input-box">
             <label for="moves">Moves:</label>
-            <input type="text" id="moves" />
+            <input type="text" id="moves" value="25"/>
         </div>
 
         <div class="input-box">
-            <label for="objectives">Objectives:</label>
-            <input type="text" id="objectives" />
+            <label for="objectives_blocker1">Objectives_blocker1:</label>
+            <input type="text" id="objectives_blocker_1" value="0"/>
         </div>
 
+        <div class="input-box">
+            <label for="objectives_blocker2">Objectives_blocker2:</label>
+            <input type="text" id="objectives_blocker_2" value="0"/>
+        </div>
+
+        <div class="input-box">
+            <label for="objectives_blocker3">Objectives_blocker3:</label>
+            <input type="text" id="objectives_blocker_3" value="0"/>
+        </div>
+        
         <div class="input-box">
             <label for="void">Void:</label>
-            <input type="text" id="void" />
+            <input type="text" id="void" value="11, 99"/>
         </div>
 
         <div class="input-box">
             <label for="layer1">Layer1:</label>
-            <input type="text" id="layer1" />
+            <input type="text" id="layer1"/>
         </div>
 
         <div class="input-box">
             <label for="pieces">Pieces:</label>
-            <input type="text" id="pieces" />
+            <input type="text" id="pieces"/>
         </div>
 
         <button onclick="generateJSON()">Generate JSON</button>
@@ -59,9 +69,14 @@
         <div class="output-box">
             <label for="jsonOutput">JSON Output:</label>
             <textarea id="jsonOutput" readonly></textarea>
+            <button onclick="copyToClipboard()">Copy to Clipboard</button>
+            <button onclick="downloadJSON()">Download JSON</button>
         </div>
     </div>
 
     <script src="script.js"></script>
+
+    <pre id="jsonOutput"></pre>
+    
 </body>
 </html>

@@ -16,7 +16,7 @@ body {
 }
 
 .input-box {
-    margin-bottom: 16px;
+    margin-bottom: 36px; /* Add margin-bottom for spacing between input boxes */
 }
 
 label {
@@ -53,6 +53,7 @@ label[for="jsonOutput"], textarea {
 }
 
 textarea {
-    height: 150px;
+    height: 300px; /* Adjust the height to make the output box bigger */
     margin-top: 5px;
+    line-height: 1.5; /* Add line-height for extra spacing between lines */
 }
